@@ -1,4 +1,4 @@
-import shortid from "shortid";
+/*/import shortid from "shortid";
 import React from "react"
 function Copy() {
   
@@ -116,4 +116,4 @@ function Copy() {
   );
 }
 
-export default Copy;
+export default Copy;/*/
