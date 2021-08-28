@@ -1,0 +1,32 @@
+import React from 'react';
+import {
+  BrowserRouter as Router ,
+  Switch,
+  Route,
+  Link,
+  Navlink
+} from 'react-router-dom'
+import Home from './componentes/Home';
+import Conosenos from './componentes/Conosenos';
+import Contactanos from './componentes/Contactanos';
+import Menu from './componentes/Menu';
+function App() {
+  return (
+    <Router>
+      <div className="container nt 5"><Menu /></div>
+      <Switch>
+        <Route path="/conosenos" exact>
+          <Conosenos />
+        </Route>
+        <Route path="/contactanos" exact>
+          <Contactanos />
+        </Route>
+      </Switch>
+        <Route path="/"  exact>
+          <Home />
+        </Route>
+    </Router>
+  );
+}
+
+export default App;
